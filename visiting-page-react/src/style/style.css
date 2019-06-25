@@ -58,7 +58,7 @@ button:hover {
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    max-width: 430px;
+    max-width: 420.6px;
     min-height: 610px;    
 }
 
@@ -81,6 +81,10 @@ h1 {
 
 h2, h3, p, ul {
     color: #14213d;
+}
+
+span {
+    font-weight: bold;
 }
 
 p {

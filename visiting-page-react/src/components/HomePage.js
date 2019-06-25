@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutMe from './AboutMe'
 import '../style/style.css';
 
 const imgProfile = {
@@ -7,24 +8,37 @@ const imgProfile = {
 };
 
 export default class HomePage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            goToAboutMe: false
+        };
+    }
+
+    jumpToAboutMe = () => {
+        this.setState({goToAboutMe: true});
+    }
+
     render() {
-        return ( 
-            <div className="container">
-                <div className="nav">
-                    <button>Home</button>
-                    <button>About me</button>
-                    <button>Skills</button>
-                    <button>Portfolio</button>
-                    <button>Contact</button>
+        if (!this.state.goToAboutMe)
+            return (
+                <div className="container">
+                    <div className="nav">
+                        <button>Home</button>
+                        <button onClick={this.jumpToAboutMe}>About me</button>
+                        <button>Skills</button>
+                        <button>Portfolio</button>
+                        <button>Contact</button>
+                    </div>
+                    <div className="box">
+                        <img src={imgProfile.src} alt={imgProfile.alt} />
+                        <hr></hr>
+                        <h1>Hello!</h1>
+                        <h2>My name is Marta Kolodziej</h2>
+                        <h3>I am a front-end developer</h3>
+                    </div>
                 </div>
-                <div className="box">
-                    <img src={imgProfile.src} alt={imgProfile.alt} />
-                    <hr></hr>
-                    <h1>Hello!</h1>
-                    <h2>My name is Marta Kolodziej</h2>
-                    <h3>I am a front-end developer</h3>
-                </div>
-            </div>
-        )
+            )
+        else return (<AboutMe />)
     }
 }
