@@ -1,5 +1,6 @@
 import React from 'react';
-import AboutMe from './AboutMe'
+import AboutMe from './AboutMe';
+import Skills from './Skills';
 import '../style/style.css';
 
 const imgProfile = {
@@ -11,22 +12,27 @@ export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            goToAboutMe: false
+            goToAboutMe: false,
+            goToSkills: false
         };
     }
 
-    jumpToAboutMe = () => {
-        this.setState({goToAboutMe: true});
+    // jumpToAboutMe = () => {
+    //     this.setState({goToAboutMe: true});
+    // }
+
+    jumpToSkills = () => {
+        this.setState({goToSkills: true});
     }
 
     render() {
-        if (!this.state.goToAboutMe)
+        if (!this.state.goToSkills)
             return (
                 <div className="container">
                     <div className="nav">
                         <button>Home</button>
                         <button onClick={this.jumpToAboutMe}>About me</button>
-                        <button>Skills</button>
+                        <button onClick={this.jumpToSkills}>Skills</button>
                         <button>Portfolio</button>
                         <button>Contact</button>
                     </div>
@@ -39,6 +45,6 @@ export default class HomePage extends React.Component {
                     </div>
                 </div>
             )
-        else return (<AboutMe />)
+        else return (<Skills />)
     }
 }
