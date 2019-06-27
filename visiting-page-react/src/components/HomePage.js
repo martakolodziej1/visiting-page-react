@@ -33,7 +33,6 @@ export default class HomePage extends React.Component {
                         <button>Home</button>
                         <button onClick={this.jumpToAboutMe}>About me</button>
                         <button onClick={this.jumpToSkills}>Skills</button>
-                        <button>Portfolio</button>
                         <button>Contact</button>
                     </div>
                     <div className="box">

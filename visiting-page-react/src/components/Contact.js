@@ -9,7 +9,6 @@ export default class Contact extends React.Component {
                         <button onClick={this.jumpToHomePage}>Home</button>
                         <button>About me</button>
                         <button>Skills</button>
-                        <button>Portfolio</button>
                         <button>Contact</button>
                     </div>
                     <div className="box">
