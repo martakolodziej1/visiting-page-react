@@ -95,3 +95,19 @@ p {
 ul.hard, ul.soft {
     width: 175px;
 }
+
+form {
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid #14213d;
+}
+
+form button {
+    font-size: 15px;
+    box-shadow: none;
+}
