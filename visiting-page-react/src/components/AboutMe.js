@@ -34,7 +34,7 @@ export default class AboutMe extends React.Component {
                             <li>E-mail: <span>marta.koodziej@gmail.com</span></li>
                         </ul>
                         <hr></hr>
-                        <p>I am a creative and ambitious individual with a great passion for designing websites. I am currently on a web programming course CodersCamp in which I can acquire knowledge, use it in practice and develop my skills. I have excellent communication skills, enabling me to interact with a wide range of clients and work in a multi-person team. My purpose is to create aesthetic and intuitive internet applications, the use of which will bring joy many people.</p>
+                        <p> Recently I completed web programming course CodersCamp, which was organised by CodersCrew Association. During the course I learnt basic programming tools and technology. Basing on theoretical knowledge I created website by myself and a few simple applications with my team. I would like to learn and develop my skills. Working as a Junior Front-end Developer or an internship in software company would be for me great possibility to gain necessary experience and knowledge.</p>
                     </div>
                 </div>
             )
