@@ -26,15 +26,38 @@ export default class Skills extends React.Component {
                     </div>
                     <div className="box">
                         <h1>Skills</h1>
-                        <ul className="hard"><h3>Hard ones</h3>
-                            <li>html</li>
-                            <li>css</li>
-                            <li>java script</li>
+                        <ul className="hard">
+                            <li><span>Languages:</span>
+                                <ul> 
+                                    <li>HTML5</li> 
+                                    <li>CSS3</li> 
+                                    <li>JavaScript (ES6)</li>
+                                </ul>
+                            </li>
+                            <li><span>Library:</span> 
+                                <ul>
+                                    <li>React</li>
+                                    <li>npm</li>
+                                </ul>
+                            </li>
+                            <li><span>Tools:</span> 
+                                <ul>
+                                    <li>Babel</li>
+                                    <li>Webpack</li>
+                                </ul>
+                            </li>
+                            <li><span>Version control system and repository:</span> 
+                                <ul>
+                                    <li>Git</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </li>
                         </ul>
-                        <ul className="soft"><h3>Soft ones</h3>
-                            <li>creativity</li>
-                            <li>analytical thinking</li>
-                            <li>patience</li>
+                        <hr></hr>
+                        <ul className="soft">
+                            <li>Communication skills and ability to work in a team</li>
+                            <li>Good organisational skills</li>
+                            <li>Willingness to learn and develop</li>
                         </ul>
                     </div>
                 </div>
