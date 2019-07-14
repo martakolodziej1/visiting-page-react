@@ -1,6 +1,7 @@
 import React from 'react';
-import AboutMe from './AboutMe';
-import Skills from './Skills';
+import pages from '../res/constants';
+import Renderer from './Renderer';
+import Navbar from './Navbar';
 import '../style/style.css';
 
 const imgProfile = {
@@ -12,31 +13,20 @@ export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            goTo: ""
+            page: pages.home
         };
     }
 
-     jumpToAboutMe = () => {
-         this.setState({goTo: "AboutMe"});
-     }
-
-    jumpToSkills = () => {
-        this.setState({goTo: "Skills"});
+    setNextPage = (chosenPage) => {
+        this.setState({page: chosenPage});
     }
 
     render() {
-        if (this.state.goTo === "Skills")
-            return (<Skills />)
-        if (this.state.goTo === "AboutMe")
-            return (<AboutMe />)
+        if (this.state.page !== pages.home)
+            return (<Renderer page = {this.state.page}/>)
         return (
             <div className="container">
-                <div className="nav">
-                    <button>Home</button>
-                    <button onClick={this.jumpToAboutMe}>About me</button>
-                    <button onClick={this.jumpToSkills}>Skills</button>
-                    <button>Contact</button>
-                </div>
+                < Navbar setNextPage = {this.setNextPage}/>
                 <div className="box">
                     <img src={imgProfile.src} alt={imgProfile.alt} />
                     <hr></hr>
