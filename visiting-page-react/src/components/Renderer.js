@@ -1,6 +1,6 @@
 import React from 'react';
 import pages from '../res/constants';
-import HomePage from './HomePage';
+import Home from './Home';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Contact from './Contact';
@@ -8,7 +8,7 @@ import Contact from './Contact';
 export default class Renderer extends React.Component {
     render() {
         if (this.props.page === pages.home)
-            return (<HomePage />)
+            return (<Home />)
         if (this.props.page === pages.aboutMe)
             return (<AboutMe />)
         if (this.props.page === pages.skills)

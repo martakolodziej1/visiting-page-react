@@ -1,5 +1,6 @@
 import React from 'react';
 import pages from '../res/constants';
+import Page from './Page';
 import Renderer from './Renderer';
 import Navbar from './Navbar';
 import '../style/style.css';
@@ -9,16 +10,12 @@ const imgProfile = {
     alt: 'profile'
 };
 
-export default class HomePage extends React.Component {
+export default class Home extends Page {
     constructor(props) {
         super(props);
         this.state = {
             page: pages.home
         };
-    }
-
-    setNextPage = (chosenPage) => {
-        this.setState({page: chosenPage});
     }
 
     render() {

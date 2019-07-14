@@ -1,19 +1,16 @@
 import React from 'react';
 import pages from '../res/constants';
+import Page from './Page';
 import Renderer from './Renderer';
 import Navbar from './Navbar';
 import '../style/style.css';
 
-export default class Skills extends React.Component {
+export default class Skills extends Page {
     constructor(props) {
         super(props);
         this.state = {
             page: pages.skills
         };
-    }
-
-    setNextPage = (chosenPage) => {
-        this.setState({page: chosenPage});
     }
 
     render() {
