@@ -5,9 +5,9 @@ import Renderer from './Renderer';
 import Navbar from './Navbar';
 import '../style/style.css';
 
-const imgProfile = {
-    src: process.env.PUBLIC_URL + '/img/profile.jpg',
-    alt: 'profile'
+const imgDesk = {
+    src: process.env.PUBLIC_URL + '/img/desk.jpg',
+    alt: 'desk'
 };
 
 export default class Home extends Page {
@@ -23,10 +23,9 @@ export default class Home extends Page {
             return (<Renderer page = {this.state.page}/>)
         return (
             <div className="container">
-                < Navbar setNextPage = {this.setNextPage}/>
+                <img src={imgDesk.src} alt={imgDesk.alt} />
                 <div className="box">
-                    <img src={imgProfile.src} alt={imgProfile.alt} />
-                    <hr></hr>
+                    <Navbar setNextPage = {this.setNextPage}/>  
                     <h1>Hello!</h1>
                     <h2>My name is Marta Kolodziej</h2>
                     <h3>I am a front-end developer</h3>
