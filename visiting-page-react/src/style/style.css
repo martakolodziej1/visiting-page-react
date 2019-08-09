@@ -30,15 +30,11 @@ body {
 button {
     background-color: white;
     color: #14213d;
-    border: 1px solid #14213d;
-    border-radius: 5px;
+    border: none;
     font-size: 20px;
     padding: 4px 25px;
-    margin-top: 10px;
-    margin-right: 10px;
     transition: transform 80ms ease-in;
     outline: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
@@ -47,27 +43,27 @@ button:active {
 
 button:hover {
     background-color: #14213d;
-    border: 2px solid white;
     color: white;
 }
 
 .box {
     background-color: white;
-    padding: 50px;
+    /* padding: 50px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     width: 420.6px;
     min-height: 610px;    
 }
 
-img {
+.image-side {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/stil-xhb7s-Q-ECA-unsplash.jpg");
+    background-size: cover;
     width: 420.6px;
     min-height: 610px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px 0 0 5px;
+    border-right: 1px solid #14213d;
 }
 
 hr {
@@ -79,7 +75,7 @@ hr {
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 40px;
-    margin: 5px;
+    padding-top: 25%;
     color: #14213d;
 }
 

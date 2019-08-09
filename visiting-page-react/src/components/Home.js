@@ -5,11 +5,6 @@ import Renderer from './Renderer';
 import Navbar from './Navbar';
 import '../style/style.css';
 
-const imgDesk = {
-    src: process.env.PUBLIC_URL + '/img/desk.jpg',
-    alt: 'desk'
-};
-
 export default class Home extends Page {
     constructor(props) {
         super(props);
@@ -23,7 +18,7 @@ export default class Home extends Page {
             return (<Renderer page = {this.state.page}/>)
         return (
             <div className="container">
-                <img src={imgDesk.src} alt={imgDesk.alt} />
+                <div className="image-side"></div>
                 <div className="box">
                     <Navbar setNextPage = {this.setNextPage}/>  
                     <h1>Hello!</h1>
