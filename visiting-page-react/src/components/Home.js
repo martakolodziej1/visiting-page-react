@@ -21,7 +21,7 @@ export default class Home extends Page {
                 <div className="image-side"></div>
                 <div className="box">
                     <Navbar setNextPage = {this.setNextPage}/>  
-                    <h1>Hello!</h1>
+                    <h1 className="home">Hello!</h1>
                     <h2>My name is Marta Kolodziej</h2>
                     <h3>I am a front-end developer</h3>
                 </div>

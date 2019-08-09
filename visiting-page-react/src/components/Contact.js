@@ -18,8 +18,9 @@ export default class Contact extends Page {
             return (<Renderer page = {this.state.page}/>)
         return (
             <div className="container">
-                < Navbar setNextPage = {this.setNextPage}/>
+                <div className="image-side"></div>
                 <div className="box">
+                    <Navbar setNextPage = {this.setNextPage}/>
                     <h1>Contact me</h1>
                     <ul>
                         <li>Poland, Wroclaw</li>
@@ -30,11 +31,11 @@ export default class Contact extends Page {
                     <hr></hr>
                     <form action="/action_page.php">
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your name..."/>
+                        <input type="text" id="name" placeholder="Your name..."/><br></br>
                         <label for="email">E-mail</label>
-                        <input type="text" id="email" placeholder="Your e-mail address..."/>
+                        <input type="text" id="email" placeholder="Your e-mail address..."/><br></br>
                         <label for="subject">What is it about</label>
-                        <textarea id="subject" placeholder="Write subject..."></textarea>
+                        <textarea id="subject" placeholder="Write subject..." rows="1"></textarea><br></br>
                         <label for="message">Message</label>
                         <textarea id="message" placeholder="Write message..."></textarea>
                         <button>Submit</button>

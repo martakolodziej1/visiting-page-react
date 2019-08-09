@@ -18,8 +18,9 @@ export default class AboutMe extends Page {
             return (<Renderer page = {this.state.page}/>)
         return (
             <div className="container">
-                < Navbar setNextPage = {this.setNextPage}/>
+                <div className="image-side"></div>
                 <div className="box">
+                    <Navbar setNextPage = {this.setNextPage}/>
                     <h1>About me</h1>
                     <ul>
                         <li>Full Name: <span>Marta Kolodziej</span></li>

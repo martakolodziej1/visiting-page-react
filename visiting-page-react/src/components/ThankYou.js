@@ -1,5 +1,5 @@
 import React from 'react';
-import HomePage from './HomePage';
+import Home from './Home';
 import '../style/style.css';
 
 export default class ThankYou extends React.Component {
@@ -18,6 +18,7 @@ export default class ThankYou extends React.Component {
         if (!this.state.goToHomePage)
             return (
                 <div className="container">
+                    <div className="image-side"></div>
                     <div className="box">
                         <div className="thanks">
                             <h1>Thank you for getting in touch!</h1>
@@ -28,6 +29,6 @@ export default class ThankYou extends React.Component {
                     </div>
                 </div>
             )
-        else return (<HomePage />)
+        else return (<Home />)
     }
 }
