@@ -98,7 +98,7 @@ hr {
 h1.home {
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
-    padding-top: 25%;
+    padding-top: 30%;
     color: #14213d;
 }
 
@@ -174,9 +174,11 @@ form button {
 
 .thanks h1 {
     margin-bottom: 5%;
-    padding: 20% 5% 5% 0;
+    padding: 5% 5% 5% 0;
+    font-size: 1.8em;
 }
 
 .thanks h2 {
     margin: 10%;
+    font-family: 'Dancing Script', cursive;
 }

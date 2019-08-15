@@ -29,17 +29,11 @@ export default class Contact extends Page {
                         <li>marta.koodziej at gmail</li>
                     </ul>
                     <hr></hr>
-                    <form action="/action_page.php">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your name..."/><br></br>
-                        <label for="email">E-mail</label>
-                        <input type="text" id="email" placeholder="Your e-mail address..."/><br></br>
-                        <label for="subject">What is it about</label>
-                        <textarea id="subject" placeholder="Write subject..." rows="1"></textarea><br></br>
-                        <label for="message">Message</label>
-                        <textarea id="message" placeholder="Write message..."></textarea>
-                        <button>Submit</button>
-                    </form>
+                    <div className="thanks">
+                        <h1> Thank you for getting in touch! </h1> 
+                        <p> I appreciate you contacting me. <br></br>I will answer you as soon as possible.</p>
+                        <h2> Have a great day! </h2>
+                    </div>
                 </div>
             </div>
         )
