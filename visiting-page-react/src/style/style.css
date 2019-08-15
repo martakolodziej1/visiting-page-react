@@ -17,7 +17,6 @@ body {
     flex-direction: row;
     align-items: center;
     border: 1px solid #14213d;
-    border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -31,21 +30,44 @@ body {
 button {
     background-color: #F0E4A1;
     color: #14213d;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
     border: none;
     font-size: 1em;
     padding: 4%;
     transition: transform 80ms ease-in;
     outline: none;
+    display: inline-block;
+    position: relative;
+    cursor:pointer;
 }
 
 button:active {
     transform: scale(0.95);
 }
 
-button:hover {
-    /* background-color: #14213d;
-    color: white; */
-    border-bottom: 1px double black;
+button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s,
+    -webkit-transform 0.35s;
+    transition: opacity 0.35s,
+    transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+button:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .box {
@@ -54,9 +76,10 @@ button:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     width: 379px;
-    height: 563px;    
+    height: 563px;
+    letter-spacing: 0.1em;  
 }
 
 .image-side {
@@ -73,15 +96,15 @@ hr {
 }
 
 h1.home {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
     padding-top: 25%;
     color: #14213d;
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
     color: #14213d;
     margin: 2%;
 }
