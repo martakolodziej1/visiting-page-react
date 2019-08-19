@@ -31,7 +31,7 @@ export default class Navbar extends React.Component {
         return (
             <div className="nav">
                 <button onClick={this.jumpToHomePage}>Home</button>
-                <button onClick={this.jumpToAboutMe}>About me</button>
+                <button onClick={this.jumpToAboutMe}>Me</button>
                 <button onClick={this.jumpToSkills}>Skills</button>
                 <button onClick={this.jumpToContact}>Contact</button>
             </div>

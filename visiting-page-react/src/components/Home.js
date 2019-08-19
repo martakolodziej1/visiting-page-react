@@ -5,11 +5,6 @@ import Renderer from './Renderer';
 import Navbar from './Navbar';
 import '../style/style.css';
 
-const imgProfile = {
-    src: process.env.PUBLIC_URL + '/img/profile.jpg',
-    alt: 'profile'
-};
-
 export default class Home extends Page {
     constructor(props) {
         super(props);
@@ -23,13 +18,12 @@ export default class Home extends Page {
             return (<Renderer page = {this.state.page}/>)
         return (
             <div className="container">
-                < Navbar setNextPage = {this.setNextPage}/>
+                <div className="image-side"></div>
                 <div className="box">
-                    <img src={imgProfile.src} alt={imgProfile.alt} />
-                    <hr></hr>
-                    <h1>Hello!</h1>
+                    <Navbar setNextPage = {this.setNextPage}/>  
+                    <h1 className="home">Hello!</h1>
                     <h2>My name is Marta Kolodziej</h2>
-                    <h3>I am a front-end developer</h3>
+                    <h3>and my passion is front-end</h3>
                 </div>
             </div>
         )

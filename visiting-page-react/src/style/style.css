@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: linear-gradient(0deg, #FF4E50, #F9D423);
+    background-color: #d9d8d7;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,71 +16,110 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border: 1px solid #14213d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 button {
-    background-color: white;
+    background-color: #F0E4A1;
     color: #14213d;
-    border: 2px solid #14213d;
-    border-radius: 25px;
-    font-size: 20px;
-    padding: 4px 25px;
-    margin-top: 10px;
-    margin-right: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    border: none;
+    font-size: 1em;
+    padding: 4%;
     transition: transform 80ms ease-in;
     outline: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    position: relative;
+    cursor:pointer;
 }
 
 button:active {
     transform: scale(0.95);
 }
 
-button:hover {
-    background-color: #14213d;
-    border: 2px solid white;
-    color: white;
+button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s,
+    -webkit-transform 0.35s;
+    transition: opacity 0.35s,
+    transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+button:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .box {
-    background-color: white;
-    border: 2px solid #14213d;
-    border-radius: 25px;
-    padding: 50px;
+    background-color: #F0E4A1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    font-family: 'Quicksand', sans-serif;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    width: 420.6px;
-    min-height: 610px;    
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 379px;
+    height: 563px;
+    letter-spacing: 0.1em;  
 }
 
-img {
-    padding-bottom: 20px;
+.image-side {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/img/stil-xhb7s-Q-ECA-unsplash.jpg");
+    background-size: cover;
+    width: 379px;
+    height: 563px;
+    border-right: 1px solid #14213d;
 }
 
 hr {
     background-color: #14213d;
     width: 100%;
-    height: 3px;
+}
+
+h1.home {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    padding-top: 30%;
+    color: #14213d;
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
-    margin: 5px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
     color: #14213d;
+    margin: 2%;
 }
 
 h2, h3, p, ul {
     color: #14213d;
+}
+
+li {
+    padding: 0 5%;
+    font-size: 0.9em;
+}
+
+ul.soft {
+    margin: 1% 5%;
 }
 
 span {
@@ -90,6 +129,8 @@ span {
 p {
     text-align: justify;
     text-align-last: center;
+    padding: 0 5%;
+    font-size: 0.9em;
 }
 
 form {
@@ -97,15 +138,34 @@ form {
 }
 
 input, textarea {
-    width: 100%;
-    margin: 5px;
-    padding: 2px;
+    width: 95%;
+    margin: 1%;
+    padding: 1.5%;
     border: 1px solid #14213d;
 }
 
-form button, .thanks button {
+label {
+    font-size: 0.9em;
+}
+
+.thanks button {
     font-size: 15px;
     box-shadow: none;
+    border: 1px dotted black;
+    padding: 2% 4%;
+}
+
+form button {
+    font-size: 0.8em;
+    box-shadow: none;
+    border: 1px solid black;
+    padding: 2% 4%;
+    margin: 2%;
+}
+
+.thanks button:hover, form button:hover {
+    background-color: #14213d;
+    color: white;
 }
 
 .thanks {
@@ -113,9 +173,97 @@ form button, .thanks button {
 }
 
 .thanks h1 {
-    margin-bottom: 50px;
+    margin-bottom: 5%;
+    padding: 5% 5% 5% 0;
+    font-size: 1.8em;
 }
 
 .thanks h2 {
-    margin-top: 50px;
+    margin: 10%;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 280px;
+        height: 560px;
+    }
+
+    .image-side {
+        width: 280px;
+        height: 560px;
+    }
+
+    h1.home {
+        padding-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 225px;
+        height: 460px;
+    }
+
+    .image-side {
+        width: 225px;
+        height: 460px;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
+
+    h1.home {
+        font-size: 2em;
+        padding-top: 50%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2,
+    h3 {
+        font-size: 1em;
+    }
+
+    li,
+    p {
+        font-size: 0.75em;
+        margin: 0;
+    }
+
+    .thanks h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: column
+    }
+
+    .box {
+        width: 300px;
+        height: 455px;
+    }
+
+    .image-side {
+        width: 300px;
+        height: 225px;
+        border-right: none;
+        border-bottom: 1px solid #14213d;
+    }
+
+    h1.home {
+        padding-top: 40%;
+    }
+
+    li,
+    p {
+        font-size: 0.8em;
+        margin: 0;
+    }
 }

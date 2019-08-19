@@ -18,8 +18,9 @@ export default class Skills extends Page {
             return (<Renderer page = {this.state.page}/>)
         return (
             <div className="container">
-                < Navbar setNextPage = {this.setNextPage}/>
+                <div className="image-side"></div>
                 <div className="box">
+                    <Navbar setNextPage = {this.setNextPage}/>
                     <h1>Skills</h1>
                     <ul className="hard">
                         <li><span>Languages:</span>
