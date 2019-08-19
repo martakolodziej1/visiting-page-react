@@ -11,11 +11,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "visiting-page-react -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "http://martakolodziej1.github.io/visiting-page-react",
   "browserslist": {
     "production": [
       ">0.2%",
