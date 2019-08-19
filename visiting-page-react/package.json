@@ -13,12 +13,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "visiting-page-react -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "http://martakolodziej1.github.io/visiting-page-react",
+  "homepage": "https://martakolodziej1.github.io/visiting-page-react",
   "browserslist": {
     "production": [
       ">0.2%",
