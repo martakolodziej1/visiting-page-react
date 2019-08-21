@@ -34,7 +34,7 @@ button {
     font-weight: bold;
     border: none;
     font-size: 1em;
-    padding: 4%;
+    padding: 15.15px;
     transition: transform 80ms ease-in;
     outline: none;
     display: inline-block;
@@ -91,7 +91,7 @@ button:hover:after {
 }
 
 hr {
-    background-color: #14213d;
+    border-top: 0.1px solid #14213d;
     width: 100%;
 }
 
@@ -133,48 +133,13 @@ p {
     font-size: 0.9em;
 }
 
-form {
-    text-align: center;
-}
-
-input, textarea {
-    width: 95%;
-    margin: 1%;
-    padding: 1.5%;
-    border: 1px solid #14213d;
-}
-
-label {
-    font-size: 0.9em;
-}
-
-.thanks button {
-    font-size: 15px;
-    box-shadow: none;
-    border: 1px dotted black;
-    padding: 2% 4%;
-}
-
-form button {
-    font-size: 0.8em;
-    box-shadow: none;
-    border: 1px solid black;
-    padding: 2% 4%;
-    margin: 2%;
-}
-
-.thanks button:hover, form button:hover {
-    background-color: #14213d;
-    color: white;
-}
-
 .thanks {
     text-align: center;
 }
 
 .thanks h1 {
     margin-bottom: 5%;
-    padding: 5% 5% 5% 0;
+    padding: 5%;
     font-size: 1.8em;
 }
 
@@ -197,6 +162,10 @@ form button {
     h1.home {
         padding-top: 40%;
     }
+
+    button {
+        padding: 11.2px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -212,6 +181,7 @@ form button {
 
     button {
         font-size: 0.8em;
+        padding: 9px;
     }
 
     h1.home {
@@ -259,6 +229,10 @@ form button {
 
     h1.home {
         padding-top: 40%;
+    }
+
+    button {
+        padding: 12px;
     }
 
     li,
