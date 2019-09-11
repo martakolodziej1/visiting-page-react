@@ -78,7 +78,7 @@ button:hover:after {
     align-items: center;
     font-family: 'Open Sans Condensed', sans-serif;
     width: 379px;
-    height: 563px;
+    height: 565px;
     letter-spacing: 0.1em;  
 }
 
@@ -86,7 +86,7 @@ img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/img/stil-xhb7s-Q-ECA-unsplash.jpg");
     background-size: cover;
     width: 379px;
-    height: 563px;
+    height: 565px;
     border-right: 1px solid #14213d;
 }
 
@@ -149,14 +149,9 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-    .box {
-        width: 280px;
-        height: 560px;
-    }
-
-    img {
-        width: 280px;
-        height: 560px;
+    .box, img {
+        width: 281px;
+        height: 562px;
     }
 
     h1.home {
@@ -169,14 +164,9 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
-    .box {
+    .box, img {
         width: 225px;
-        height: 460px;
-    }
-
-    img {
-        width: 225px;
-        height: 460px;
+        height: 463px;
     }
 
     button {
@@ -215,14 +205,16 @@ p {
         flex-direction: column
     }
 
+    .box, img {
+        width: 302px;
+    }
+
     .box {
-        width: 300px;
         height: 455px;
     }
 
     img {
-        width: 300px;
-        height: 225px;
+        height: 226px;
         border-right: none;
         border-bottom: 1px solid #14213d;
     }
