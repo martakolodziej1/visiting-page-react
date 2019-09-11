@@ -83,8 +83,6 @@ button:hover:after {
 }
 
 img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/img/stil-xhb7s-Q-ECA-unsplash.jpg");
-    background-size: cover;
     width: 379px;
     height: 565px;
     border-right: 1px solid #14213d;
