@@ -3,6 +3,7 @@ import pages from '../res/constants';
 import Page from './Page';
 import Renderer from './Renderer';
 import Navbar from './Navbar';
+import Image from './Image';
 import '../style/style.css';
 
 export default class Skills extends Page {
@@ -18,7 +19,7 @@ export default class Skills extends Page {
             return (<Renderer page = {this.state.page}/>)
         return (
             <div className="container">
-                <div className="image-side"></div>
+                <Image />
                 <div className="box">
                     <Navbar setNextPage = {this.setNextPage}/>
                     <h1>Skills</h1>
