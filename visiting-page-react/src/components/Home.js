@@ -24,7 +24,7 @@ export default class Home extends Page {
                     <Navbar setNextPage = {this.setNextPage}/>  
                     <h1 className="home">Hello!</h1>
                     <h2>My name is Marta Kolodziej</h2>
-                    <h3>and my passion is front-end</h3>
+                    <h3>and I'm a beginner front-end developer</h3>
                 </div>
             </div>
         )

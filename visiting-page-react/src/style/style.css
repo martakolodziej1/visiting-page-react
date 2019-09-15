@@ -120,6 +120,10 @@ h2, h3, p, ul {
     color: #14213d;
 }
 
+h3 {
+    text-align: center;
+}
+
 li {
     padding: 0 5%;
     font-size: 0.9em;
@@ -130,7 +134,7 @@ ul.soft {
 }
 
 ul.contact {
-    margin-bottom: 12%;
+    margin-bottom: 9%;
 }
 
 span {
