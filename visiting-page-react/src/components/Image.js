@@ -10,6 +10,6 @@ const imageStyle = {
 
 export default class Image extends React.Component{
     render() {
-        return <img style={ imageStyle }/>
+        return <img style={ imageStyle } alt=''/>
     }
 }
