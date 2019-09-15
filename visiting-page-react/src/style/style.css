@@ -27,7 +27,7 @@ body {
     width: 100%;
 }
 
-button {
+button, a {
     background-color: #F0E4A1;
     color: #14213d;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -42,11 +42,19 @@ button {
     cursor:pointer;
 }
 
-button:active {
+.repoLink {
+    padding: 0;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+button:active,
+a:active {
     transform: scale(0.95);
 }
 
-button:after {
+button:after,
+a:after {
     content: '';
     position: absolute;
     left: 0;
@@ -64,7 +72,8 @@ button:after {
     transform: scale(0, 1);
 }
 
-button:hover:after {
+button:hover:after,
+a:hover:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -118,6 +127,10 @@ li {
 
 ul.soft {
     margin: 1% 5%;
+}
+
+ul.contact {
+    margin-bottom: 12%;
 }
 
 span {

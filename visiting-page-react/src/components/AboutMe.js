@@ -27,8 +27,8 @@ export default class AboutMe extends Page {
                         <li>Full Name: <span>Marta Kolodziej</span></li>
                         <li>Age: <span>25 Years</span></li>
                         <li>Job: <span>Front-end developer</span></li>
-                        <li>Telephone: <span>123 456 789</span></li>
                         <li>E-mail: <span>marta.koodziej at gmail</span></li>
+                        <li><a className="repoLink" href="https://github.com/martakolodziej1/visiting-page-react" target="_blank">This page repo</a></li>
                     </ul>
                     <hr></hr>
                     <p> Recently I completed web programming course CodersCamp, which was organised by CodersCrew Association. During the course I learnt basic programming tools and technology. Basing on theoretical knowledge I created website by myself and a few simple applications with my team. I would like to learn and develop my skills. Working as a Junior Front-end Developer or an internship in software company would be for me great possibility to gain necessary experience and knowledge.</p>

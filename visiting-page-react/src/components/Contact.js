@@ -23,10 +23,8 @@ export default class Contact extends Page {
                 <div className="box">
                     <Navbar setNextPage = {this.setNextPage}/>
                     <h1>Contact me</h1>
-                    <ul>
+                    <ul className="contact">
                         <li>Poland, Wroclaw</li>
-                        <li>Długa 3, 12-123</li>
-                        <li>123 456 789</li>
                         <li>marta.koodziej at gmail</li>
                     </ul>
                     <hr></hr>
