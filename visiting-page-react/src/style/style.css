@@ -34,7 +34,7 @@ button {
     font-weight: bold;
     border: none;
     font-size: 1em;
-    padding: 4%;
+    padding: 15.15px;
     transition: transform 80ms ease-in;
     outline: none;
     display: inline-block;
@@ -78,20 +78,18 @@ button:hover:after {
     align-items: center;
     font-family: 'Open Sans Condensed', sans-serif;
     width: 379px;
-    height: 563px;
+    height: 565px;
     letter-spacing: 0.1em;  
 }
 
-.image-side {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/img/stil-xhb7s-Q-ECA-unsplash.jpg");
-    background-size: cover;
+img {
     width: 379px;
-    height: 563px;
+    height: 565px;
     border-right: 1px solid #14213d;
 }
 
 hr {
-    background-color: #14213d;
+    border-top: 0.1px solid #14213d;
     width: 100%;
 }
 
@@ -133,48 +131,13 @@ p {
     font-size: 0.9em;
 }
 
-form {
-    text-align: center;
-}
-
-input, textarea {
-    width: 95%;
-    margin: 1%;
-    padding: 1.5%;
-    border: 1px solid #14213d;
-}
-
-label {
-    font-size: 0.9em;
-}
-
-.thanks button {
-    font-size: 15px;
-    box-shadow: none;
-    border: 1px dotted black;
-    padding: 2% 4%;
-}
-
-form button {
-    font-size: 0.8em;
-    box-shadow: none;
-    border: 1px solid black;
-    padding: 2% 4%;
-    margin: 2%;
-}
-
-.thanks button:hover, form button:hover {
-    background-color: #14213d;
-    color: white;
-}
-
 .thanks {
     text-align: center;
 }
 
 .thanks h1 {
     margin-bottom: 5%;
-    padding: 5% 5% 5% 0;
+    padding: 5%;
     font-size: 1.8em;
 }
 
@@ -184,34 +147,29 @@ form button {
 }
 
 @media only screen and (max-width: 768px) {
-    .box {
-        width: 280px;
-        height: 560px;
-    }
-
-    .image-side {
-        width: 280px;
-        height: 560px;
+    .box, img {
+        width: 281px;
+        height: 562px;
     }
 
     h1.home {
         padding-top: 40%;
     }
+
+    button {
+        padding: 11.2px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .box {
+    .box, img {
         width: 225px;
-        height: 460px;
-    }
-
-    .image-side {
-        width: 225px;
-        height: 460px;
+        height: 463px;
     }
 
     button {
         font-size: 0.8em;
+        padding: 9px;
     }
 
     h1.home {
@@ -245,20 +203,26 @@ form button {
         flex-direction: column
     }
 
+    .box, img {
+        width: 302px;
+    }
+
     .box {
-        width: 300px;
         height: 455px;
     }
 
-    .image-side {
-        width: 300px;
-        height: 225px;
+    img {
+        height: 226px;
         border-right: none;
         border-bottom: 1px solid #14213d;
     }
 
     h1.home {
         padding-top: 40%;
+    }
+
+    button {
+        padding: 12px;
     }
 
     li,
